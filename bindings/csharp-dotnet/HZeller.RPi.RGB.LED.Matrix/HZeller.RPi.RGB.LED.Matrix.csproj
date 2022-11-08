@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PlatformTargets>x64;x86</PlatformTargets>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Platforms>x64;x86</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="..\..\..\lib\librgbmatrix.so" Link="librgbmatrix.so">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

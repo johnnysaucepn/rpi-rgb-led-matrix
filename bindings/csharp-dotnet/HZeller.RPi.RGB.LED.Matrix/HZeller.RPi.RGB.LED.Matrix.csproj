@@ -4,9 +4,9 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <PlatformTargets>x64;x86</PlatformTargets>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Platforms>x64;x86</Platforms>
+    <Platforms>ARM32</Platforms>
+    <RuntimeIdentifier>linux-arm</RuntimeIdentifier>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,6 +1,6 @@
 using rpi_rgb_led_matrix_sharp;
 
-var matrix = new RGBLedMatrix(32, 2, 1);
+var matrix = new RGBLedMatrix(new RGBLedMatrixOptions(), Environment.CommandLine[1..]);
 var canvas = matrix.CreateOffscreenCanvas();
 
 for (var i = 0; i < 1000; ++i)

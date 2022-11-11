@@ -5,7 +5,13 @@ VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HZeller.RPi.RGB.LED.Matrix", "HZeller.RPi.RGB.LED.Matrix\HZeller.RPi.RGB.LED.Matrix.csproj", "{F5E7358D-12B6-4B0D-8D2B-63446F0BF229}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "minimal-example", "minimal-example\minimal-example.csproj", "{B2E399D0-CBC2-4608-B349-76FCA2DF1F50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "minimal-example", "minimal-example\minimal-example.csproj", "{B2E399D0-CBC2-4608-B349-76FCA2DF1F50}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "font-example", "font-example\font-example.csproj", "{181753EC-E81E-420A-83F2-BE2F99EF2454}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "matrix-rain", "matrix-rain\matrix-rain.csproj", "{1B4ABAD2-A547-41A9-8D58-25695FECCAC3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pulsing-brightness", "pulsing-brightness\pulsing-brightness.csproj", "{688C3C11-E4C2-4F5C-8E65-B1CD25FFA6B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +26,18 @@ Global
 		{B2E399D0-CBC2-4608-B349-76FCA2DF1F50}.Debug|ARM32.ActiveCfg = Debug|ARM32
 		{B2E399D0-CBC2-4608-B349-76FCA2DF1F50}.Debug|ARM32.Build.0 = Debug|ARM32
 		{B2E399D0-CBC2-4608-B349-76FCA2DF1F50}.Release|ARM32.ActiveCfg = Release|ARM32
+		{181753EC-E81E-420A-83F2-BE2F99EF2454}.Debug|ARM32.ActiveCfg = Debug|ARM32
+		{181753EC-E81E-420A-83F2-BE2F99EF2454}.Debug|ARM32.Build.0 = Debug|ARM32
+		{181753EC-E81E-420A-83F2-BE2F99EF2454}.Release|ARM32.ActiveCfg = Release|ARM32
+		{181753EC-E81E-420A-83F2-BE2F99EF2454}.Release|ARM32.Build.0 = Release|ARM32
+		{1B4ABAD2-A547-41A9-8D58-25695FECCAC3}.Debug|ARM32.ActiveCfg = Debug|ARM32
+		{1B4ABAD2-A547-41A9-8D58-25695FECCAC3}.Debug|ARM32.Build.0 = Debug|ARM32
+		{1B4ABAD2-A547-41A9-8D58-25695FECCAC3}.Release|ARM32.ActiveCfg = Release|ARM32
+		{1B4ABAD2-A547-41A9-8D58-25695FECCAC3}.Release|ARM32.Build.0 = Release|ARM32
+		{688C3C11-E4C2-4F5C-8E65-B1CD25FFA6B2}.Debug|ARM32.ActiveCfg = Debug|ARM32
+		{688C3C11-E4C2-4F5C-8E65-B1CD25FFA6B2}.Debug|ARM32.Build.0 = Debug|ARM32
+		{688C3C11-E4C2-4F5C-8E65-B1CD25FFA6B2}.Release|ARM32.ActiveCfg = Release|ARM32
+		{688C3C11-E4C2-4F5C-8E65-B1CD25FFA6B2}.Release|ARM32.Build.0 = Release|ARM32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

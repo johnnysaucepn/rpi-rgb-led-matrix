@@ -10,7 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="..\..\..\lib\librgbmatrix.so.1" Link="librgbmatrix.so">
+    <Content Include="..\..\..\lib\librgbmatrix.so.1" Condition="Exists('..\..\..\lib\librgbmatrix.so.1')" Link="librgbmatrix.so">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

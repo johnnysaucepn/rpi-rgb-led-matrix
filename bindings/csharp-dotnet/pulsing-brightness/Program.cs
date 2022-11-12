@@ -1,6 +1,17 @@
+using demo_utilities;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using rpi_rgb_led_matrix_sharp;
 
-var matrix = new RGBLedMatrix(new RGBLedMatrixOptions(), Environment.GetCommandLineArgs()[1..]);
+using IHost host = Host.CreateDefaultBuilder(args)
+    .ConfigureServices(services => {
+        services.AddSingleton<RGBLedMatrixOptionsFactory>();
+    })
+    .Build();
+
+RGBLedMatrixOptions opts = host.Services.GetRequiredService<RGBLedMatrixOptionsFactory>().Build();
+
+var matrix = new RGBLedMatrix(opts, Environment.GetCommandLineArgs()[1..]);
 var canvas = matrix.CreateOffscreenCanvas();
 var maxBrightness = matrix.Brightness;
 var count = 0;
@@ -38,6 +49,8 @@ while (!Console.KeyAvailable)
 
     Thread.Sleep(20);
 }
+
+await host.StartAsync();
 
 return 0;
 

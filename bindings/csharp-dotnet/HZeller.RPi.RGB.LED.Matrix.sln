@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "matrix-rain", "matrix-rain\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pulsing-brightness", "pulsing-brightness\pulsing-brightness.csproj", "{688C3C11-E4C2-4F5C-8E65-B1CD25FFA6B2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demo-utilities", "demo-utilities\demo-utilities.csproj", "{25D2FBEC-A806-423E-984D-EC96C78B87F1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM32 = Debug|ARM32
@@ -38,6 +40,9 @@ Global
 		{688C3C11-E4C2-4F5C-8E65-B1CD25FFA6B2}.Debug|ARM32.Build.0 = Debug|ARM32
 		{688C3C11-E4C2-4F5C-8E65-B1CD25FFA6B2}.Release|ARM32.ActiveCfg = Release|ARM32
 		{688C3C11-E4C2-4F5C-8E65-B1CD25FFA6B2}.Release|ARM32.Build.0 = Release|ARM32
+		{25D2FBEC-A806-423E-984D-EC96C78B87F1}.Debug|ARM32.ActiveCfg = Debug|ARM32
+		{25D2FBEC-A806-423E-984D-EC96C78B87F1}.Debug|ARM32.Build.0 = Debug|ARM32
+		{25D2FBEC-A806-423E-984D-EC96C78B87F1}.Release|ARM32.ActiveCfg = Release|ARM32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

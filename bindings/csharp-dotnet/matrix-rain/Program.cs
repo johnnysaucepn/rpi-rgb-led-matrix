@@ -1,29 +1,22 @@
-using Microsoft.Extensions.Configuration;
+using demo_utilities;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using rpi_rgb_led_matrix_sharp;
 using System.Diagnostics;
 
-using IHost host = Host.CreateDefaultBuilder(args).Build();
+using IHost host = Host.CreateDefaultBuilder(args)
+    .ConfigureServices(services => {
+        services.AddSingleton<RGBLedMatrixOptionsFactory>();
+        })
+    .Build();
 
-IConfiguration config = host.Services.GetRequiredService<IConfiguration>();
+RGBLedMatrixOptions opts = host.Services.GetRequiredService<RGBLedMatrixOptionsFactory>().Build();
 
 const int MAX_HEIGHT = 16;
 const int COLOR_STEP = 15;
 const int FRAME_STEP = 1;
 
-var rows = config.GetValue<int>("rows", 32);
-var cols = config.GetValue<int>("cols", 64);
-var hardwareMapping = config.GetValue<string>("led-gpio-mapping");
-var ledRgbSequence = config.GetValue<string>("led-rgb-sequence");
-
-var opts = new RGBLedMatrixOptions();
-opts.Rows = rows;
-opts.Cols = cols;
-if (!string.IsNullOrEmpty(hardwareMapping)) opts.HardwareMapping = hardwareMapping;
-if (!string.IsNullOrEmpty(ledRgbSequence)) opts.LedRgbSequence = ledRgbSequence;
-
-var matrix = new RGBLedMatrix(new RGBLedMatrixOptions(), Environment.GetCommandLineArgs()[1..]);
+var matrix = new RGBLedMatrix(opts, Environment.GetCommandLineArgs()[1..]);
 var canvas = matrix.CreateOffscreenCanvas();
 var rnd = new Random();
 var points = new List<Point>();

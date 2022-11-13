@@ -17,4 +17,10 @@
     <ProjectReference Include="..\HZeller.RPi.RGB.LED.Matrix\HZeller.RPi.RGB.LED.Matrix.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="6x12.bdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

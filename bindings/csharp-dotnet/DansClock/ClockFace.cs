@@ -13,6 +13,7 @@ namespace DansClock
     {
         private readonly RGBLedMatrixOptionsFactory _optionsFactory;
         private readonly IConfiguration _config;
+        private bool _running = true;
 
         public ClockFace(RGBLedMatrixOptionsFactory optionsFactory, IConfiguration config)
         {
@@ -39,19 +40,20 @@ namespace DansClock
             int y = (canvas.Height - glyphHeight) / 2;
             int x = (canvas.Width - (8 * glyphWidth)) / 2;
 
-            while (!cancellationToken.IsCancellationRequested)
+            while (_running)
             {
                 Console.WriteLine("Tick...");
                 canvas.Clear();
                 var currentTime = DateTime.Now.ToLongTimeString(); 
                 canvas.DrawText(font, 1, 6, color, currentTime);
                 matrix.SwapOnVsync(canvas);
-                await Task.Delay(TimeSpan.FromMilliseconds(500), cancellationToken);
+                await Task.Delay(TimeSpan.FromMilliseconds(500));
             }
         }
 
         public Task StopAsync(CancellationToken cancellationToken)
         {
+            _running = false;
             return Task.CompletedTask;
         }
     }

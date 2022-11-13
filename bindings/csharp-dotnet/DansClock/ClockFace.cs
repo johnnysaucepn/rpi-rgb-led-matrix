@@ -44,7 +44,7 @@ namespace DansClock
                 Console.WriteLine("Tick...");
                 canvas.Clear();
                 var currentTime = DateTime.Now.ToLongTimeString(); 
-                canvas.DrawText(font, 1, 6, color, currentTime);
+                canvas.DrawText(font, x, y, color, currentTime);
                 matrix.SwapOnVsync(canvas);
                 await Task.Delay(TimeSpan.FromMilliseconds(500), cancellationToken);
             }

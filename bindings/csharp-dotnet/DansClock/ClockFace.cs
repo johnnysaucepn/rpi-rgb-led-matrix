@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +22,7 @@ namespace DansClock
 
         public async Task StartAsync(CancellationToken cancellationToken)
         {
+            Console.WriteLine("Starting...");
             RGBLedMatrixOptions opts = _optionsFactory.Build();
 
             var fontFile = "6x12.bdf";
@@ -40,6 +41,8 @@ namespace DansClock
 
             while (!cancellationToken.IsCancellationRequested)
             {
+                Console.WriteLine("Tick...");
+                canvas.Clear();
                 var currentTime = DateTime.Now.ToLongTimeString(); 
                 canvas.DrawText(font, 1, 6, color, currentTime);
                 matrix.SwapOnVsync(canvas);

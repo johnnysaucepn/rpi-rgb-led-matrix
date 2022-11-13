@@ -9,11 +9,10 @@ using rpi_rgb_led_matrix_sharp;
 
 namespace DansClock
 {
-    public class ClockFace : IHostedService
+    public class ClockFace : BackgroundService
     {
         private readonly RGBLedMatrixOptionsFactory _optionsFactory;
         private readonly IConfiguration _config;
-        private bool _running = true;
 
         public ClockFace(RGBLedMatrixOptionsFactory optionsFactory, IConfiguration config)
         {
@@ -21,7 +20,7 @@ namespace DansClock
             _config = config;
         }
 
-        public async Task StartAsync(CancellationToken cancellationToken)
+        protected override async Task ExecuteAsync(CancellationToken cancellationToken)
         {
             Console.WriteLine("Starting...");
             RGBLedMatrixOptions opts = _optionsFactory.Build();
@@ -40,21 +39,16 @@ namespace DansClock
             int y = (canvas.Height - glyphHeight) / 2;
             int x = (canvas.Width - (8 * glyphWidth)) / 2;
 
-            while (_running)
+            while (!cancellationToken.IsCancellationRequested)
             {
                 Console.WriteLine("Tick...");
                 canvas.Clear();
                 var currentTime = DateTime.Now.ToLongTimeString(); 
                 canvas.DrawText(font, 1, 6, color, currentTime);
                 matrix.SwapOnVsync(canvas);
-                await Task.Delay(TimeSpan.FromMilliseconds(500));
+                await Task.Delay(TimeSpan.FromMilliseconds(500), cancellationToken);
             }
         }
 
-        public Task StopAsync(CancellationToken cancellationToken)
-        {
-            _running = false;
-            return Task.CompletedTask;
-        }
     }
 }

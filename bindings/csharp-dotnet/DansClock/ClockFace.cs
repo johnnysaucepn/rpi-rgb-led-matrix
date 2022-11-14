@@ -36,7 +36,7 @@ namespace DansClock
             var canvas = matrix.CreateOffscreenCanvas();
             var font = new RGBLedFont(fontFile);
             var glyphWidth = 6;
-            var glyphHeight = 13;
+            var glyphHeight = 9;
 
             int y = (canvas.Height + glyphHeight) / 2;
             int x = (canvas.Width - (8 * glyphWidth)) / 2;

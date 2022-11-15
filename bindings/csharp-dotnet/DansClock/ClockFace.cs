@@ -54,7 +54,7 @@ namespace DansClock
                 DrawBorder(bgColor, canvas, top, left, bottom, right);
                 DrawBars(canvas, left+2, right-2, bottom-2, currentTime.Hour, currentTime.Minute, currentTime.Second);
                 matrix.SwapOnVsync(canvas);
-                await Task.Delay(TimeSpan.FromMilliseconds(500), cancellationToken);
+                await Task.Delay(TimeSpan.FromMilliseconds(250), cancellationToken);
             }
         }
 
@@ -63,10 +63,10 @@ namespace DansClock
             var hourColor = new Color(64, 0, 64);
             var minuteColor = new Color(64, 64, 0);
             var secondColor = new Color(0, 64, 64);
-            var maxLength = right - left;
-            var hourLength = (int)(maxLength * (hours / 23.0));
-            var minuteLength = (int)(maxLength * (minutes / 59.0));
-            var secondLength = (int)(maxLength * (seconds/ 59.0));
+            var maxLength = right - left -1;
+            var hourLength = (int)Math.Round(maxLength * (hours / 24.0), MidpointRounding.ToZero);
+            var minuteLength = (int)Math.Round(maxLength * (minutes / 60.0), MidpointRounding.ToZero);
+            var secondLength = (int)Math.Round(maxLength * (seconds/ 60.0), MidpointRounding.ToZero);
 
             if (hourLength > 0) canvas.DrawLine(left, bottom - 4, left + hourLength, bottom - 4, hourColor);
             if (minuteLength > 0) canvas.DrawLine(left, bottom - 2, left + minuteLength, bottom - 2, minuteColor);

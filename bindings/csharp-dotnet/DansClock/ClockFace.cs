@@ -50,7 +50,7 @@ namespace DansClock
                 canvas.Clear();
                 var currentTime = DateTime.Now;
 
-                canvas.DrawText(font, x, y - 8, textColor, currentTime.ToLongTimeString());
+                canvas.DrawText(font, x, y - 3, textColor, currentTime.ToLongTimeString());
                 DrawBorder(bgColor, canvas, top, left, bottom, right);
                 DrawBars(canvas, left+2, right-2, bottom-2, currentTime.Hour, currentTime.Minute, currentTime.Second);
                 matrix.SwapOnVsync(canvas);
@@ -60,20 +60,17 @@ namespace DansClock
 
         private void DrawBars(RGBLedCanvas canvas, int left, int right, int bottom, int hours, int minutes, int seconds)
         {
-            var hourColor = new Color(128, 0, 128);
-            var minuteColor = new Color(128, 128, 0);
-            var secondColor = new Color(0, 128, 128);
+            var hourColor = new Color(64, 0, 64);
+            var minuteColor = new Color(64, 64, 0);
+            var secondColor = new Color(0, 64, 64);
             var maxLength = right - left;
-            var hourLength = (int)(maxLength * (hours / 24.0));
-            var minuteLength = (int)(maxLength * (minutes / 60.0));
-            var secondLength = (int)(maxLength * (seconds/ 60.0));
+            var hourLength = (int)(maxLength * (hours / 23.0));
+            var minuteLength = (int)(maxLength * (minutes / 59.0));
+            var secondLength = (int)(maxLength * (seconds/ 59.0));
 
-            canvas.DrawLine(left, bottom - 5, left + hourLength, bottom - 5, hourColor);
-            canvas.DrawLine(left, bottom - 4, left + hourLength, bottom - 4, hourColor);
-            canvas.DrawLine(left, bottom - 3, left + minuteLength, bottom - 3, minuteColor);
-            canvas.DrawLine(left, bottom - 2, left + minuteLength, bottom - 2, minuteColor);
-            canvas.DrawLine(left, bottom - 1, left + secondLength, bottom - 1, secondColor);
-            canvas.DrawLine(left, bottom - 0, left + secondLength, bottom - 0, secondColor);
+            if (hourLength > 0) canvas.DrawLine(left, bottom - 4, left + hourLength, bottom - 4, hourColor);
+            if (minuteLength > 0) canvas.DrawLine(left, bottom - 2, left + minuteLength, bottom - 2, minuteColor);
+            if (secondLength > 0) canvas.DrawLine(left, bottom - 0, left + secondLength, bottom - 0, secondColor);
         }
 
         private static void DrawBorder(Color bgColor, RGBLedCanvas canvas, int top, int left, int bottom, int right)

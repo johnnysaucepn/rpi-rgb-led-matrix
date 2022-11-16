@@ -5,8 +5,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Platforms>ARM32</Platforms>
-    <RuntimeIdentifier>linux-arm</RuntimeIdentifier>
+    <Platforms>ARM32;ARM64</Platforms>
+    <RuntimeIdentifiers>linux-arm;linux-arm64</RuntimeIdentifiers>
   </PropertyGroup>
 
   <ItemGroup>

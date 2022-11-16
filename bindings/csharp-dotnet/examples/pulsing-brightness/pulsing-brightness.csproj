@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>minimal-example</RootNamespace>
+    <RootNamespace>pulsing-brightness</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Platforms>ARM32</Platforms>
@@ -16,7 +16,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\demo-utilities\demo-utilities.csproj" />
-    <ProjectReference Include="..\HZeller.RPi.RGB.LED.Matrix\HZeller.RPi.RGB.LED.Matrix.csproj" />
   </ItemGroup>
 
 </Project>

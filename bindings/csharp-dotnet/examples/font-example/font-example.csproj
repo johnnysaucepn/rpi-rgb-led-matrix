@@ -11,91 +11,91 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\..\..\fonts\10x20.bdf" Link="10x20.bdf">
+    <None Include="..\..\..\..\fonts\10x20.bdf" Link="10x20.bdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\..\fonts\4x6.bdf" Link="4x6.bdf">
+    <None Include="..\..\..\..\fonts\4x6.bdf" Link="4x6.bdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\..\fonts\5x7.bdf" Link="5x7.bdf">
+    <None Include="..\..\..\..\fonts\5x7.bdf" Link="5x7.bdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\..\fonts\5x8.bdf" Link="5x8.bdf">
+    <None Include="..\..\..\..\fonts\5x8.bdf" Link="5x8.bdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\..\fonts\6x10.bdf" Link="6x10.bdf">
+    <None Include="..\..\..\..\fonts\6x10.bdf" Link="6x10.bdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\..\fonts\6x12.bdf" Link="6x12.bdf">
+    <None Include="..\..\..\..\fonts\6x12.bdf" Link="6x12.bdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\..\fonts\6x13.bdf" Link="6x13.bdf">
+    <None Include="..\..\..\..\fonts\6x13.bdf" Link="6x13.bdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\..\fonts\6x13B.bdf" Link="6x13B.bdf">
+    <None Include="..\..\..\..\fonts\6x13B.bdf" Link="6x13B.bdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\..\fonts\6x13O.bdf" Link="6x13O.bdf">
+    <None Include="..\..\..\..\fonts\6x13O.bdf" Link="6x13O.bdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\..\fonts\6x9.bdf" Link="6x9.bdf">
+    <None Include="..\..\..\..\fonts\6x9.bdf" Link="6x9.bdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\..\fonts\7x13.bdf" Link="7x13.bdf">
+    <None Include="..\..\..\..\fonts\7x13.bdf" Link="7x13.bdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\..\fonts\7x13B.bdf" Link="7x13B.bdf">
+    <None Include="..\..\..\..\fonts\7x13B.bdf" Link="7x13B.bdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\..\fonts\7x13O.bdf" Link="7x13O.bdf">
+    <None Include="..\..\..\..\fonts\7x13O.bdf" Link="7x13O.bdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\..\fonts\7x14.bdf" Link="7x14.bdf">
+    <None Include="..\..\..\..\fonts\7x14.bdf" Link="7x14.bdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\..\fonts\7x14B.bdf" Link="7x14B.bdf">
+    <None Include="..\..\..\..\fonts\7x14B.bdf" Link="7x14B.bdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\..\fonts\8x13.bdf" Link="8x13.bdf">
+    <None Include="..\..\..\..\fonts\8x13.bdf" Link="8x13.bdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\..\fonts\8x13B.bdf" Link="8x13B.bdf">
+    <None Include="..\..\..\..\fonts\8x13B.bdf" Link="8x13B.bdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\..\fonts\8x13O.bdf" Link="8x13O.bdf">
+    <None Include="..\..\..\..\fonts\8x13O.bdf" Link="8x13O.bdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\..\fonts\9x15.bdf" Link="9x15.bdf">
+    <None Include="..\..\..\..\fonts\9x15.bdf" Link="9x15.bdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\..\fonts\9x15B.bdf" Link="9x15B.bdf">
+    <None Include="..\..\..\..\fonts\9x15B.bdf" Link="9x15B.bdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\..\fonts\9x18.bdf" Link="9x18.bdf">
+    <None Include="..\..\..\..\fonts\9x18.bdf" Link="9x18.bdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\..\fonts\9x18B.bdf" Link="9x18B.bdf">
+    <None Include="..\..\..\..\fonts\9x18B.bdf" Link="9x18B.bdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\..\fonts\AUTHORS" Link="AUTHORS">
+    <None Include="..\..\..\..\fonts\AUTHORS" Link="AUTHORS">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\..\fonts\clR6x12.bdf" Link="clR6x12.bdf">
+    <None Include="..\..\..\..\fonts\clR6x12.bdf" Link="clR6x12.bdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\..\fonts\helvR12.bdf" Link="helvR12.bdf">
+    <None Include="..\..\..\..\fonts\helvR12.bdf" Link="helvR12.bdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\..\fonts\README" Link="README">
+    <None Include="..\..\..\..\fonts\README" Link="README">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\..\fonts\README.md" Link="README.md">
+    <None Include="..\..\..\..\fonts\README.md" Link="README.md">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\..\fonts\texgyre-27.bdf" Link="texgyre-27.bdf">
+    <None Include="..\..\..\..\fonts\texgyre-27.bdf" Link="texgyre-27.bdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\..\fonts\tom-thumb.bdf" Link="tom-thumb.bdf">
+    <None Include="..\..\..\..\fonts\tom-thumb.bdf" Link="tom-thumb.bdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
@@ -106,7 +106,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\demo-utilities\demo-utilities.csproj" />
-    <ProjectReference Include="..\HZeller.RPi.RGB.LED.Matrix\HZeller.RPi.RGB.LED.Matrix.csproj" />
   </ItemGroup>
 
 </Project>

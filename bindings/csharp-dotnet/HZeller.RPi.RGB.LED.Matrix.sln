@@ -5,17 +5,17 @@ VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HZeller.RPi.RGB.LED.Matrix", "HZeller.RPi.RGB.LED.Matrix\HZeller.RPi.RGB.LED.Matrix.csproj", "{F5E7358D-12B6-4B0D-8D2B-63446F0BF229}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "minimal-example", "minimal-example\minimal-example.csproj", "{B2E399D0-CBC2-4608-B349-76FCA2DF1F50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "minimal-example", "examples\minimal-example\minimal-example.csproj", "{B2E399D0-CBC2-4608-B349-76FCA2DF1F50}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "font-example", "font-example\font-example.csproj", "{181753EC-E81E-420A-83F2-BE2F99EF2454}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "font-example", "examples\font-example\font-example.csproj", "{181753EC-E81E-420A-83F2-BE2F99EF2454}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "matrix-rain", "matrix-rain\matrix-rain.csproj", "{1B4ABAD2-A547-41A9-8D58-25695FECCAC3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "matrix-rain", "examples\matrix-rain\matrix-rain.csproj", "{1B4ABAD2-A547-41A9-8D58-25695FECCAC3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pulsing-brightness", "pulsing-brightness\pulsing-brightness.csproj", "{688C3C11-E4C2-4F5C-8E65-B1CD25FFA6B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pulsing-brightness", "examples\pulsing-brightness\pulsing-brightness.csproj", "{688C3C11-E4C2-4F5C-8E65-B1CD25FFA6B2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "demo-utilities", "demo-utilities\demo-utilities.csproj", "{25D2FBEC-A806-423E-984D-EC96C78B87F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "demo-utilities", "examples\demo-utilities\demo-utilities.csproj", "{25D2FBEC-A806-423E-984D-EC96C78B87F1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DansClock", "DansClock\DansClock.csproj", "{4E3B8A7F-3D8D-41B9-A603-8C0F300A6699}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{C3C852A7-6C98-43D8-85AD-B3DF7ADDF47F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,13 +45,16 @@ Global
 		{25D2FBEC-A806-423E-984D-EC96C78B87F1}.Debug|ARM32.ActiveCfg = Debug|ARM32
 		{25D2FBEC-A806-423E-984D-EC96C78B87F1}.Debug|ARM32.Build.0 = Debug|ARM32
 		{25D2FBEC-A806-423E-984D-EC96C78B87F1}.Release|ARM32.ActiveCfg = Release|ARM32
-		{4E3B8A7F-3D8D-41B9-A603-8C0F300A6699}.Debug|ARM32.ActiveCfg = Debug|ARM32
-		{4E3B8A7F-3D8D-41B9-A603-8C0F300A6699}.Debug|ARM32.Build.0 = Debug|ARM32
-		{4E3B8A7F-3D8D-41B9-A603-8C0F300A6699}.Release|ARM32.ActiveCfg = Release|ARM32
-		{4E3B8A7F-3D8D-41B9-A603-8C0F300A6699}.Release|ARM32.Build.0 = Release|ARM32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B2E399D0-CBC2-4608-B349-76FCA2DF1F50} = {C3C852A7-6C98-43D8-85AD-B3DF7ADDF47F}
+		{181753EC-E81E-420A-83F2-BE2F99EF2454} = {C3C852A7-6C98-43D8-85AD-B3DF7ADDF47F}
+		{1B4ABAD2-A547-41A9-8D58-25695FECCAC3} = {C3C852A7-6C98-43D8-85AD-B3DF7ADDF47F}
+		{688C3C11-E4C2-4F5C-8E65-B1CD25FFA6B2} = {C3C852A7-6C98-43D8-85AD-B3DF7ADDF47F}
+		{25D2FBEC-A806-423E-984D-EC96C78B87F1} = {C3C852A7-6C98-43D8-85AD-B3DF7ADDF47F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CB7393F4-B2AC-4874-8B64-EBF08FD4B886}

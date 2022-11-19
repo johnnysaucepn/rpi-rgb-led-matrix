@@ -6,7 +6,6 @@
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Platforms>ARM32;ARM64</Platforms>
-    <RuntimeIdentifiers>linux-arm;linux-arm64</RuntimeIdentifiers>
     <PackageId>HZeller.RPi.RGB.LED.Matrix.$(Platform)</PackageId>
   </PropertyGroup>
 

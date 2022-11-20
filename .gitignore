@@ -2,3 +2,5 @@
 *.a
 *~
 *.so
+bindings/csharp-dotnet/HZeller.RPi.RGB.LED.Matrix/lib/ARM32
+bindings/csharp-dotnet/HZeller.RPi.RGB.LED.Matrix/lib/ARM64

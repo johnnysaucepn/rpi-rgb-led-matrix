@@ -10,7 +10,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="lib\$(Platform)\librgbmatrix.so.1" Link="librgbmatrix.so.1">
+    <Content Include="lib\ARM32\librgbmatrix.so.1" Condition="'$(Platform)'=='ARM32'">
+      <PackagePath>runtimes\linux-arm\native</PackagePath>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\ARM64\librgbmatrix.so.1" Condition="'$(Platform)'=='ARM64'">
+      <PackagePath>runtimes\linux-arm64\native</PackagePath>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

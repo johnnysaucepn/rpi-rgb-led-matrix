@@ -1,9 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace rpi_rgb_led_matrix_sharp
 {
@@ -77,5 +72,25 @@ namespace rpi_rgb_led_matrix_sharp
         {
             return font.DrawText(_canvas, x, y, color, text, spacing, vertical);
         }
+
+    }
+
+    public struct Color
+    {
+        public Color(int r, int g, int b)
+        {
+            R = (byte)r;
+            G = (byte)g;
+            B = (byte)b;
+        }
+        public Color(byte r, byte g, byte b)
+        {
+            R = r;
+            G = g;
+            B = b;
+        }
+        public byte R;
+        public byte G;
+        public byte B;
     }
 }

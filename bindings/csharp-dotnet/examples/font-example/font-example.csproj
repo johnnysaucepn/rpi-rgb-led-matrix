@@ -105,8 +105,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\HZeller.RPi.RGB.LED.Matrix.Utilities\HZeller.RPi.RGB.LED.Matrix.Utilities.csproj" />
     <ProjectReference Include="..\..\HZeller.RPi.RGB.LED.Matrix\HZeller.RPi.RGB.LED.Matrix.csproj" />
-    <ProjectReference Include="..\demo-utilities\demo-utilities.csproj" />
   </ItemGroup>
 
 </Project>

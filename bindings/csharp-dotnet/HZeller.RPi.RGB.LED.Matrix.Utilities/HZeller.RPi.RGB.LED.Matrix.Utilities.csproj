@@ -1,12 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <Version>1.0.0</Version>
     <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>demo_utilities</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Platforms>ARM32;ARM64</Platforms>
-    <RuntimeIdentifiers>linux-arm;linux-arm64</RuntimeIdentifiers>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>HZeller.RPi.RGB.LED.Matrix.Utilities.$(Platform)</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\HZeller.RPi.RGB.LED.Matrix\HZeller.RPi.RGB.LED.Matrix.csproj" />
+    <ProjectReference Include="..\HZeller.RPi.RGB.LED.Matrix\HZeller.RPi.RGB.LED.Matrix.csproj" />
   </ItemGroup>
 
 </Project>

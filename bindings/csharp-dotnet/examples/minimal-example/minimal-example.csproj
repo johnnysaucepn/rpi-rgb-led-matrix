@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\demo-utilities\demo-utilities.csproj" />
+    <ProjectReference Include="..\..\HZeller.RPi.RGB.LED.Matrix.Utilities\HZeller.RPi.RGB.LED.Matrix.Utilities.csproj" />
   </ItemGroup>
 
 </Project>

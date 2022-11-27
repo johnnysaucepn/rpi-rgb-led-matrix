@@ -1,4 +1,4 @@
-using demo_utilities;
+using HZeller.RPi.RGB.LED.Matrix.Utilities;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using rpi_rgb_led_matrix_sharp;

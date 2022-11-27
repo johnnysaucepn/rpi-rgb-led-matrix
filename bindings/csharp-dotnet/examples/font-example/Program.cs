@@ -1,4 +1,4 @@
-using demo_utilities;
+using HZeller.RPi.RGB.LED.Matrix.Utilities;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -17,7 +17,7 @@ var fontFile = config.GetValue("font", "4x6.bdf");
 var text = config.GetValue("text", "Hello World!");
 var hexColor = config.GetValue<string>("color");
 
-var color = Color.HexToColor(hexColor, new Color(0, 255, 0));
+var color = ColorExtensions.HexToColor(hexColor, new Color(0, 255, 0));
 
 if (text is null)
 {
